@@ -1,0 +1,72 @@
+GLOBAL
+
+definicion
+
+  PImage atardecer;
+
+setup
+
+    atardecer = loadImage("GinaFlorencia.jpg");
+
+
+
+draw
+
+if (frameCount%8000 == 0)
+{
+contadorImagenes = (int)random(1, 9);
+
+// cachar que onda el texto
+
+switch(contadorImagenes)
+{
+case '1': 
+    atardecer = loadImage("anochecer.jpg");
+    break;
+
+  case '2': 
+    atardecer = loadImage("atardecerOscuro.jpg");
+    break;
+    
+  case '3': 
+    atardecer = loadImage("ensayoTerraza.jpg");
+    break;
+
+  case '4': 
+    atardecer = loadImage("FelipeRodriguezBarrera.png");
+    break;
+
+case '5': 
+    atardecer = loadImage("FelipeRodriguezBarrera02.jpg");
+    break;
+
+  case '6': 
+    atardecer = loadImage("GinaFlorencia.jpg");
+    break;
+    
+  case '7': 
+    atardecer = loadImage("miPieza.jpg");
+    break;
+
+  case '8': 
+    atardecer = loadImage("penumbra.jpg");
+    break;
+}
+
+  letraChicaASCII.setupZero();
+  letraChicaASCIIv2.setupZero();
+  letraChicaASCIIv3.setupZero();
+
+  letraChicaASCII02.setupZero();
+  letraChicaASCII03.setupZero();
+
+}
+
+
+
+
+
+
+
+
+
